@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+.github-logo {
+    width: 6%;
+    margin: 1%;
+}
+
+.linkedin-logo {
+    width: 6%;
+    margin: 1%;
+}
+
+.github-logo:hover {
+    filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg) brightness(94%) contrast(92%);
+}
+
+.linkedin-logo:hover {
+    filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg) brightness(94%) contrast(92%);
+}
