@@ -1,21 +1,68 @@
 body {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
 }
 
-.github-logo {
-    width: 6%;
-    margin: 1%;
+.container-fluid {
+  padding: 7% 15%;
 }
 
-.linkedin-logo {
-    width: 6%;
-    margin: 1%;
+#title {
+    background-color: #5f6caf;
+    color: #edf7fa;
+}
+
+.name-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.25rem;
+}
+
+.links {
+    padding: 5%;
+}
+
+#title .github-logo {
+  width: 20%;
+  margin: 1rem;
+}
+
+#title .linkedin-logo {
+  width: 18%;
+  margin: 1rem;
+}
+
+#title .email-logo {
+  width: 20%;
+  margin: 1rem;
 }
 
 .github-logo:hover {
-    filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg) brightness(94%) contrast(92%);
+  filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg)
+    brightness(94%) contrast(92%);
 }
 
 .linkedin-logo:hover {
-    filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg) brightness(94%) contrast(92%);
+  filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg)
+    brightness(94%) contrast(92%);
+}
+
+.email-logo:hover {
+  filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg)
+    brightness(94%) contrast(92%);
+}
+
+#projects {
+    background-color: #ffb677;
+    color: #ff8364;
+}
+
+.projects-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4rem;
+}
+
+footer {
+    background-color: #5f6caf;
+    color: #edf7fa;
 }
