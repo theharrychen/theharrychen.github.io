@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Harry Chen</title>
 
-    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="icon" href="images/favicon.ico" />
 
     <link
       rel="stylesheet"
@@ -24,14 +24,17 @@
     <section id="title">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 text-left">
+          <div class="col-lg-6">
             <h1 class="name-heading">Harry Chen</h1>
-            <p>
+            <p class="title-description">
               Hi, I'm Harry, a Computer Science and Economics Student at the
               University of Calgary. I am passionate about problem-solving and
               learning about ways we can leverage technology to drive positive
               impact in the lives of many.
             </p>
+            <button type="button" class="btn btn-light btn-lg resume-btn">
+              Resume
+            </button>
           </div>
 
           <div class="col-lg-6">
@@ -42,9 +45,10 @@
                 rel="”noopener"
                 noreferrer”
                 ><img
-                  class="github-logo"
+                  class="title-link"
                   src="images/github-logo.svg"
                   alt="github-svg"
+                  draggable="false"
               /></a>
               <a
                 href="https://www.linkedin.com/in/theharrychen/"
@@ -52,16 +56,21 @@
                 rel="”noopener"
                 noreferrer”
                 ><img
-                  class="linkedin-logo"
+                  class="linkedin-logo title-link"
                   src="images/linkedin-logo.svg"
                   alt="linkedin-img"
+                  draggable="false"
               /></a>
               <a
                 href="mailto:harry.chen1@ucalgary.ca"
                 target="_blank"
                 rel="”noopener"
                 noreferrer”
-                ><img class="email-logo" src="images/email.svg" alt="email-img"
+                ><img
+                  class="title-link"
+                  src="images/email.svg"
+                  alt="email-img"
+                  draggable="false"
               /></a>
             </div>
           </div>
@@ -72,15 +81,114 @@
     <section id="projects">
       <div class="container-fluid">
         <h2 class="projects-heading">Projects</h2>
-        <div class="row"></div>
+        <div class="row">
+          <div class=" col-lg-4 col-md-6">
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              <img
+                src="images/tankroyale.png"
+                class="card-img-top"
+                alt="tanks-image"
+                draggable="false"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tank Royale</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-4 col-md-6"></div>
+          <div class=" col-lg-4 col-md-6"></div>
+        </div>
       </div>
     </section>
 
-    <footer class="white-section" id="footer">
+    <footer id="footer">
       <div class="container-fluid">
+        <div class="links">
+          <a
+            href="https://www.github.com/theharrychen"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            ><img
+              class="footer-link"
+              src="images/github-logo.svg"
+              alt="github-svg"
+              draggable="false"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/theharrychen/"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            ><img
+              class="footer-link"
+              src="images/linkedin-logo.svg"
+              alt="linkedin-img"
+              draggable="false"
+          /></a>
+          <a
+            href="mailto:harry.chen1@ucalgary.ca"
+            target="_blank"
+            rel="”noopener"
+            noreferrer”
+            ><img
+              class="footer-link"
+              src="images/email.svg"
+              alt="email-img"
+              draggable="false"
+          /></a>
+        </div>
         <p>© Copyright 2020 Harry Chen</p>
       </div>
     </footer>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap Javascript Requirements -->
     <script
