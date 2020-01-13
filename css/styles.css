@@ -3,6 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   background-color: #5f6caf;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .container-fluid {
@@ -15,6 +16,21 @@ body {
 .btn-light:visited,
 .btn-light:focus {
   background-color: #edf7fa;
+}
+
+.btn-light {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-light:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.links {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Title Section */
@@ -33,15 +49,10 @@ body {
   text-align: left;
 }
 
-.resume-btn {
+#title a.resume-btn {
+  display: inline-block;
   margin-bottom: 1rem;
-}
-
-.links {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-shadow: none;
 }
 
 #title a {
@@ -66,27 +77,35 @@ body {
 
 #projects {
   background-color: #ffb677;
-  color: #ff8364;
 }
 
 .projects-heading {
   font-family: "Roboto Slab", serif;
   font-size: 4rem;
   margin-bottom: 40px;
+  color: #ff8364;
+}
+
+.project-column {
+  padding: 4% 2%;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 5%;
+  text-shadow: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card img {
   width: 90%;
   margin: 0 auto;
 }
-
-
-
 
 /* Footer Section */
 
@@ -106,4 +125,33 @@ footer {
 .footer-link:hover {
   filter: invert(89%) sepia(8%) saturate(1103%) hue-rotate(159deg)
     brightness(94%) contrast(92%);
+}
+
+.modal {
+  text-shadow: none;
+}
+
+.modal-header {
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-family: "Roboto Slab", serif;
+}
+
+.modal-footer {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tankroyale-gif {
+  width: 90%;
+}
+
+.element-crush-gif {
+  width: 50%;
+}
+
+.modal-sudoku-img {
+  width: 40%;
 }

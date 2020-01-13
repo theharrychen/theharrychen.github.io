@@ -32,9 +32,13 @@
               learning about ways we can leverage technology to drive positive
               impact in the lives of many.
             </p>
-            <button type="button" class="btn btn-light btn-lg resume-btn">
-              Resume
-            </button>
+            <a
+              class="btn btn-light btn-lg resume-btn"
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
           </div>
 
           <div class="col-lg-6">
@@ -42,8 +46,7 @@
               <a
                 href="https://www.github.com/theharrychen"
                 target="_blank"
-                rel="”noopener"
-                noreferrer”
+                rel="noopener noreferrer"
                 ><img
                   class="title-link"
                   src="images/github-logo.svg"
@@ -53,19 +56,14 @@
               <a
                 href="https://www.linkedin.com/in/theharrychen/"
                 target="_blank"
-                rel="”noopener"
-                noreferrer”
+                rel="noopener noreferrer"
                 ><img
                   class="linkedin-logo title-link"
                   src="images/linkedin-logo.svg"
                   alt="linkedin-img"
                   draggable="false"
               /></a>
-              <a
-                href="mailto:harry.chen1@ucalgary.ca"
-                target="_blank"
-                rel="”noopener"
-                noreferrer”
+              <a href="mailto:harry.chen1@ucalgary.ca"
                 ><img
                   class="title-link"
                   src="images/email.svg"
@@ -82,26 +80,41 @@
       <div class="container-fluid">
         <h2 class="projects-heading">Projects</h2>
         <div class="row">
-          <div class=" col-lg-4 col-md-6">
-            <div
-              class="card"
-              data-toggle="modal"
-              data-target="#exampleModalCenter"
-            >
+          <!-- Project Item 1 -->
+          <div class="project-column col-lg-4 col-md-6">
+            <div class="card" data-toggle="modal" data-target="#projectModal1">
               <img
                 src="images/tankroyale.png"
                 class="card-img-top"
                 alt="tanks-image"
                 draggable="false"
               />
-              <div class="card-body">
-                <h5 class="card-title">Tank Royale</h5>
-              </div>
             </div>
           </div>
 
-          <div class=" col-lg-4 col-md-6"></div>
-          <div class=" col-lg-4 col-md-6"></div>
+          <!-- Project Item 2 -->
+          <div class="project-column col-lg-4 col-md-6">
+            <div class="card" data-toggle="modal" data-target="#projectModal2">
+              <img
+                src="images/element-crush.png"
+                class="card-img-top"
+                alt="element-crush-image"
+                draggable="false"
+              />
+            </div>
+          </div>
+
+          <!-- Project Item 3 -->
+          <div class="project-column col-lg-4 col-md-6">
+            <div class="card" data-toggle="modal" data-target="#projectModal3">
+              <img
+                src="images/sudoku.png"
+                class="card-img-top"
+                alt="sudoku-image"
+                draggable="false"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -112,8 +125,7 @@
           <a
             href="https://www.github.com/theharrychen"
             target="_blank"
-            rel="”noopener"
-            noreferrer”
+            rel="noopener noreferrer"
             ><img
               class="footer-link"
               src="images/github-logo.svg"
@@ -123,8 +135,7 @@
           <a
             href="https://www.linkedin.com/in/theharrychen/"
             target="_blank"
-            rel="”noopener"
-            noreferrer”
+            rel="noopener noreferrer"
             ><img
               class="footer-link"
               src="images/linkedin-logo.svg"
@@ -134,8 +145,7 @@
           <a
             href="mailto:harry.chen1@ucalgary.ca"
             target="_blank"
-            rel="”noopener"
-            noreferrer”
+            rel="noopener noreferrer"
             ><img
               class="footer-link"
               src="images/email.svg"
@@ -147,21 +157,14 @@
       </div>
     </footer>
 
-    <!-- Modal 1 -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Project Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">
-              Modal title
-            </h5>
+            <h3 class="modal-title" id="projectModal1CenterTitle">
+              Tank Royale
+            </h3>
             <button
               type="button"
               class="close"
@@ -172,19 +175,129 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <img
+              class="tankroyale-gif"
+              src="https://user-images.githubusercontent.com/46468236/56075761-ee80de80-5d84-11e9-9623-aae886045d6f.gif"
+              alt="tankroyale-gif"
+              draggable="false"
+            />
           </div>
           <div class="modal-footer">
+            <p>
+              Tank Royale is a 2D topdown deathmatch multiplayer game designed
+              to be played on a single keyboard and computer. The objective of
+              the game is to eliminate all other tanks in order to be the last
+              tank standing. It features collision detection, bullet richochet,
+              various maps, round configuration, and a "sicko" mode.
+            </p>
+            <a
+              class="btn btn-outline-primary btn-lg"
+              href="https://github.com/theharrychen/TankRoyale/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try it out</a
+            >
+            <a
+              class="btn btn-outline-secondary btn-lg"
+              href="https://github.com/theharrychen/TankRoyale"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="projectModal2enterTitle">
+              Element Crush
+            </h3>
             <button
               type="button"
-              class="btn btn-secondary"
+              class="close"
               data-dismiss="modal"
+              aria-label="Close"
             >
-              Close
+              <span aria-hidden="true">&times;</span>
             </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
+          </div>
+          <div class="modal-body">
+            <img
+              class="element-crush-gif"
+              src="https://user-images.githubusercontent.com/46468236/65367719-f2960f80-dbf2-11e9-9444-9810f5ecd5cc.gif"
+              alt="element-crush-gif"
+              draggable="false"
+            />
+          </div>
+          <div class="modal-footer">
+            <p>
+              A match 3 or more tiles game, inspired by Bejeweled and Candy
+              Crush. Features combos where getting a chain of matches after your
+              initial match multiplies your turn score
+            </p>
+            <a
+              class="btn btn-outline-primary btn-lg"
+              href="https://github.com/theharrychen/Element-Crush/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Try it out</a
+            >
+            <a
+              class="btn btn-outline-secondary btn-lg"
+              href="https://github.com/theharrychen/Element-Crush"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="projectModal3CenterTitle">
+              Sudoku Solver
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
             </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="modal-sudoku-img"
+              src="images/sudoku.png"
+              alt="sudoku-img"
+              draggable="false"
+            />
+          </div>
+          <div class="modal-footer">
+            <p>
+              A program that solves any valid sudoku puzzle. Implemented a
+              backtracking sudoku solving algorithm that is employed if the
+              puzzle remains unsolved after basic elimination techniques are
+              executed.
+            </p>
+            <a
+              class="btn btn-outline-secondary btn-lg"
+              href="https://github.com/theharrychen"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
           </div>
         </div>
       </div>
