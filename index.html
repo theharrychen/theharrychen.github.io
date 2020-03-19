@@ -80,9 +80,22 @@
       <div class="container-fluid">
         <h2 class="projects-heading">Projects</h2>
         <div class="row">
-          <!-- Project Item 1 -->
           <div class="project-column col-lg-4 col-md-6">
-            <div class="card" data-toggle="modal" data-target="#projectModal1">
+            <div class="card" data-toggle="modal" data-target="#ucollab-modal">
+              <img
+                src="images/ucollab.png"
+                class="card-img-top"
+                alt="tanks-image"
+                draggable="false"
+              />
+            </div>
+          </div>
+          <div class="project-column col-lg-4 col-md-6">
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#tank-royale-modal"
+            >
               <img
                 src="images/tankroyale.png"
                 class="card-img-top"
@@ -92,9 +105,12 @@
             </div>
           </div>
 
-          <!-- Project Item 2 -->
           <div class="project-column col-lg-4 col-md-6">
-            <div class="card" data-toggle="modal" data-target="#projectModal2">
+            <div
+              class="card"
+              data-toggle="modal"
+              data-target="#element-crush-modal"
+            >
               <img
                 src="images/element-crush.png"
                 class="card-img-top"
@@ -104,9 +120,8 @@
             </div>
           </div>
 
-          <!-- Project Item 3 -->
           <div class="project-column col-lg-4 col-md-6">
-            <div class="card" data-toggle="modal" data-target="#projectModal3">
+            <div class="card" data-toggle="modal" data-target="#sudoku-modal">
               <img
                 src="images/sudoku.png"
                 class="card-img-top"
@@ -157,12 +172,54 @@
       </div>
     </footer>
 
-    <!-- Project Modal 1 -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog">
+    <!-- UCollab Modal-->
+    <div class="modal fade" id="ucollab-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="projectModal1CenterTitle">
+            <h3 class="modal-title">
+              UCollab
+            </h3>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="ucollab-showcase"
+              src="https://user-images.githubusercontent.com/46468236/77020018-f4ddea00-6947-11ea-8bdb-7b27b7597f39.gif"
+              alt="UCollab-showcase"
+              draggable="false"
+            />
+          </div>
+          <div class="modal-footer">
+            <p>
+              A web application for collaboration between students and faculty.
+              This was built for Calgary Hacks 2020.
+            </p>
+            <a
+              class="btn btn-outline-secondary btn-lg"
+              href="https://github.com/samRobertson1/UCollab"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tank Royale Modal-->
+    <div class="modal fade" id="tank-royale-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">
               Tank Royale
             </h3>
             <button
@@ -184,11 +241,7 @@
           </div>
           <div class="modal-footer">
             <p>
-              Tank Royale is a 2D topdown deathmatch multiplayer game designed
-              to be played on a single keyboard and computer. The objective of
-              the game is to eliminate all other tanks in order to be the last
-              tank standing. It features collision detection, bullet richochet,
-              various maps, round configuration, and a "sicko" mode.
+              Tank Royale is a 2D topdown tank deathmatch multiplayer game.
             </p>
             <a
               class="btn btn-outline-primary btn-lg"
@@ -209,12 +262,17 @@
       </div>
     </div>
 
-    <!-- Project Modal 2 -->
-    <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog">
+    <!-- Element Crush Modal -->
+    <div
+      class="modal fade"
+      id="element-crush-modal"
+      tabindex="-1"
+      role="dialog"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="projectModal2enterTitle">
+            <h3 class="modal-title">
               Element Crush
             </h3>
             <button
@@ -236,9 +294,7 @@
           </div>
           <div class="modal-footer">
             <p>
-              A match 3 or more tiles game, inspired by Bejeweled and Candy
-              Crush. Features combos where getting a chain of matches after your
-              initial match multiplies your turn score
+              A match 3 or more tiles desktop puzzle game.
             </p>
             <a
               class="btn btn-outline-primary btn-lg"
@@ -259,12 +315,12 @@
       </div>
     </div>
 
-    <!-- Project Modal 3 -->
-    <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog">
+    <!-- sudoku modal -->
+    <div class="modal fade" id="sudoku-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title" id="projectModal3CenterTitle">
+            <h3 class="modal-title">
               Sudoku Solver
             </h3>
             <button
@@ -286,10 +342,9 @@
           </div>
           <div class="modal-footer">
             <p>
-              A program that solves any valid sudoku puzzle. Implemented a
-              backtracking sudoku solving algorithm that is employed if the
-              puzzle remains unsolved after basic elimination techniques are
-              executed.
+              A program that solves any valid sudoku puzzle. Implemented
+              elimination techniques and a backtracking sudoku solving
+              algorithm.
             </p>
             <a
               class="btn btn-outline-secondary btn-lg"
